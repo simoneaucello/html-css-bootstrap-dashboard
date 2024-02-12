@@ -4,7 +4,11 @@ body{
 
 .debug{
   border: 1px solid black;
-  background-color: #fff;
+  background-color: #d66262;
+}
+
+img{
+  max-width: 100%;
 }
 
 header{
@@ -47,7 +51,8 @@ i{
 
 /* main  */
 
-aside {
+.left-bar{
+  margin-top: 40px;
   width: 150px;
   height: 100vh;
   background-image: url(../img/sidebar-bg.png);
@@ -56,10 +61,14 @@ aside {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 50;
 }
 
 .aside-container .row{
   width: 150px;
   height: 90%;
+}
+
+.left-bar .aside-container a{
+  color: white;
 }
