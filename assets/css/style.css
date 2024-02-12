@@ -4,6 +4,7 @@ body{
 
 .debug{
   border: 1px solid black;
+  background-color: #d66262;
 }
 
 img{
@@ -70,68 +71,4 @@ i{
 
 .left-bar .aside-container a{
   color: white;
-}
-
-/* left bar  */
-
-/* dashboard  */
-
-#dashboard{
-  margin-top: 70px;
-  margin-left: 150px;
-
-}
-
-.sa_container{
- 
-}
-
-.sa_container .prospect{
-  background-color: #3a70df;
-  /* width: 100vw; */
-  height: 130px;
-  
-}
-
-.divide{
-  border: 1px solid #dee1e5;
-  margin-bottom: 5px;
-  margin-top: 5px
-}
-
-.box{
-  background-color: white;
-  border: 1px solid #E8E8E8 ;
-  border-radius: 10px;
-  margin-bottom: 25px;
-  
-}
-
-.box-title{
-  background-color: #f7f7f7;
-  overflow: hidden;
-  border-radius: 10px 10px 0 0;
-  padding: 10px 16px 0;
-}
-
-.box-content{
-  padding: 10px 15px 0;
-}
-
-.bp-container .stat{
-  
-}
-
-
-
-.avatar-icon{
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-
-.divide-box{
-  border-bottom: 1px solid #dcdfe3;
 }
