@@ -2,4 +2,64 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.debug{
+  border: 1px solid black;
+  background-color: #fff;
+}
 
+header{
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  color: #5b5959;
+  background-color: white;
+}
+
+header .logo,
+header .icon{
+  width:10%
+
+}
+
+input{
+  width:100%;
+}
+
+i{
+  padding: 10px;
+}
+
+.icon a{
+  text-decoration: none;
+  color: #5b5959;
+}
+
+#navBarSearchForm{
+  width:80%;
+}
+
+.fa-bell{
+  color: #ef9339;
+}
+
+/* main  */
+
+aside {
+  width: 150px;
+  height: 100vh;
+  background-image: url(../img/sidebar-bg.png);
+  background-color: #142335;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.aside-container .row{
+  width: 150px;
+  height: 90%;
+}
