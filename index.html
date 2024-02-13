@@ -25,70 +25,88 @@
 </head>
 <body>
 
-<header>
+  <header>
+    <section class="fixed-top">
+      <nav class="navbar bg-white h-100 ">
+        <div class="container-fluid h-100 bg-white">
+          <div class="row row-cols-3 justify-content-between align-items-center w-100 ">
+            <div class="col-1">
+              <div class="logo">
+                <div class="logo-desk">
+                  <img class="d-md-block object-fit-contain hide" src="./assets/img/logo.svg" alt="">
+                </div>
+                <div class="logo-mob">
+                  <img class="d-md-none object-fit-contain " src="./assets/img/mobile-logo.png" alt="">
+                </div>
+              </div>
+            </div>
 
-  <nav class="navbar h-100">
-    <div class="container-fluid h-100 bg-white">
-      <div class="logo">
-        <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.svg" alt="logo">
-        </a>
-      </div>
-      
+            <div class="col-8 offset-1">
+              <div class="search-bar d-flex w-100 " role="search">        
+                <label class="form-control-label icon-seach " for=""><i class="fa-solid fa-magnifying-glass placeholder-fs ms-2"></i></label>
+                <input class="form-control placeholder-fs pe-5 " type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="icon d-flex justify-content-end ">
+                <span><i class="hide d-md-block fa-solid fa-list fs-5"></i>
+                </span>
+                <span><i class="hide d-md-block fa-solid fa-circle-question fs-5"></i>
+                </span>
+                <span><i class="hide d-md-block fa-solid fa-ellipsis-vertical fs-5"></i>
+                </span>
 
-      <form class="d-flex" role="search" id="navBarSearchForm"> 
-        <i class="fa-solid fa-magnifying-glass"></i>
-          <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">         
-      </form> 
-
-
-        <div class="icon ">
-          <a href="#">
-          <i class="fa-solid fa-list-ul"></i>
-          </a>
-          <a href="">            
-          <i class="fa-solid fa-circle-question"></i>
-          </a>
-          <a href="#">
-          <i class="fa-solid fa-ellipsis-vertical"></i>
-          </a>
-          <a href="#">
-          <i class="fa-solid fa-bell"></i>
-          </a>
+                <div>
+                  <span class="" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell fs-5"></i></span>
+                  <ul class="dropdown-menu dropdown-menu-end posiz">
+                    <li><button class="dropdown-item" type="button">Profilo</button></li>
+                    <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                    <li><button class="dropdown-item" type="button">Logout</button></li>
+                  </ul>
+                </div>              
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-  </nav>
-</header>
+      </nav>
+    </section>
+  </header>
 
 <main>
 
-<!-- LEFT BAR  -->
-  <aside class=" left-bar text-white d-flex justify-content-between flex-column mt-5 ">         
+<!-- left bar  -->
+  <aside class="left-bar text-white d-flex justify-content-between flex-column mt-5 ">         
         <div class="mt-5">
           <div class=" d-flex py-1 my-2 sa-hover">
             <div class=" text-center mx-auto mx-lg-0 sa-w">
               <i class="fa-solid fa-house"></i>
             </div>
+
             <div class="d-none d-lg-flex">
-              <p class="m-0 pt-2">Home</p>
+              <a href="#"><p class="m-0 pt-2">Home</p></a>
+              
             </div>
           </div>
+
           <div class="d-flex py-1 my-2 sa-hover ">
             <div class=" text-center mx-auto mx-lg-0 sa-w">
               <i class="fa-solid fa-signal"></i>
             </div>
+
             <div class="d-none d-lg-flex">
-              <p class="m-0 pt-2">Stats</p>
+              <a href="#"><p class="m-0 pt-2">Stats</p></a>
             </div>
           </div>
+
           <div class="d-flex py-1 my-2 sa-hover ">
             <div class=" text-center mx-auto mx-lg-0 sa-w">
               <i class="fa-solid fa-chart-simple"></i>
             </div>
+
             <div class="d-none d-lg-flex">
-              <p class="m-0 pt-2">Signals</p>
+              <a href="#"><p class="m-0 pt-2">Signal</p></a>
             </div>
-          </div>         
+          </div>                            
         </div>
   
         <div class="mt-5">
@@ -97,18 +115,18 @@
                 <i class="fa-solid fa-gear"></i>
               </div>
               <div class="d-none d-lg-flex">
-                <p class="m-0 pt-2">Admin</p>
+                <a href="#"><p class="m-0 pt-2">Admin</p></a>
               </div>
             </div>
           </div>  
         </div>      
   </aside>
-  <!-- LEFT BAR  -->
+  <!-- left bar  -->
 
-  <!-- DASHBOARD  -->
+  <!-- dashboard -->
   <section id="dashboard">
     <section class="container-fluid sa-container text-white mb-4">
-      <div class="py-3  row row-cols-1 row-cols-md-3 ">
+      <div class="py-3 row row-cols-1 row-cols-md-3 ">
 
         <div class="col order-md-1 col-lg-2">
           <span class="d-inline-block me-2 pt-3">Nuovo studente</span>
@@ -177,17 +195,17 @@
                   <input type="text" class="form-control" id="inputZip">
                 </div>
                 <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Seleziona per proseguire
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12">
                   <div class="mb-3">
-                    <label for="formFile" class="form-label">Default file input example</label>
+                    <label for="formFile" class="form-label">Foto</label>
                     <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
                   </div>
                   
                 </div>
@@ -202,8 +220,10 @@
         </div>
 
         <div class="col col-lg-6 ">
-          <h1 class="d-inline ">Boolean</h1>
+          <div class="blaze align-items-center">
+          <h1 class="d-inline">Boolean</h1>
           <span class="badge rounded-pill sa-bc-btn">Piano Blaze</span>
+        </div>
           <div>
             <span class="badge rounded-pill sa-bc-btn">3 APP</span>
             <i class="fa-solid fa-angles-right"></i>
@@ -229,7 +249,7 @@
     </section>
 
 
-    <div class="stat w-100">
+    <div class="w-100">
       <div class="container-fluid  w-100 ">
         <div class="row row-cols-1 row-cols-md-2 w-100 ">
           <div class="col col-md-8 class p-3 bp-m-auto ">
@@ -270,7 +290,7 @@
                         </div>
                       </td>
                       <td class="hide d-sm-table-cell">
-                        <p class="fw-normal mb-1">15 febbraio 2021</p>
+                        <p class="fw-normal mb-1">15 feb 2021</p>
                       </td>
                       <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
@@ -300,7 +320,7 @@
                         </div>
                       </td>
                       <td class="hide d-sm-table-cell">
-                        <p class="fw-normal mb-1">16 febbraio 2021</p>
+                        <p class="fw-normal mb-1">16 feb 2021</p>
                       </td>
                       <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
@@ -329,7 +349,7 @@
                         </div>
                       </td>
                       <td class="hide d-sm-table-cell">
-                        <p class="fw-normal mb-1">17 febbraio 2021</p>
+                        <p class="fw-normal mb-1">17 feb 2021</p>
                       </td>
                       <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
@@ -358,7 +378,7 @@
                         </div>
                       </td>
                       <td class="hide d-sm-table-cell">
-                        <p class="fw-normal mb-1">18 febbraio 2021</p>
+                        <p class="fw-normal mb-1">18 feb 2021</p>
                       </td>
                       <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
@@ -387,7 +407,7 @@
                         </div>
                       </td>
                       <td class="hide d-sm-table-cell">
-                        <p class="fw-normal mb-1">19 febbraio 2021</p>
+                        <p class="fw-normal mb-1">19 feb 2021</p>
                       </td>
                       <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
@@ -416,7 +436,7 @@
                         </div>
                       </td>
                       <td class="hide d-sm-table-cell">
-                        <p class="fw-normal mb-1">20 febbraio 2021</p>
+                        <p class="fw-normal mb-1">20 feb 2021</p>
                       </td>
                       <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
@@ -445,7 +465,7 @@
                         </div>
                       </td>
                       <td class="hide d-sm-table-cell">
-                        <p class="fw-normal mb-1">21 febbraio 2021</p>
+                        <p class="fw-normal mb-1">21 feb 2021</p>
                       </td>
                       <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
@@ -474,7 +494,7 @@
                         </div>
                       </td>
                       <td class="hide d-sm-table-cell">
-                        <p class="fw-normal mb-1">22 febbraio 2021</p>
+                        <p class="fw-normal mb-1">22 feb 2021</p>
                       </td>
                       <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
@@ -615,17 +635,8 @@
                         <a href="#">Visualizza report approfondito</a>
                       </p>
                       
-
-
-
-
-
-
+                      
   </section>
-
-
-
-
 </main>
   
 </body>

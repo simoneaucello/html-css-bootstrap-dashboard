@@ -4,10 +4,6 @@ body{
   overflow: hidden;
 }
 
-.debug{
-  border: 1px solid black;
-}
-
 img{
   max-width: 100%;
 }
@@ -19,16 +15,11 @@ header{
   top: 0;
   left: 0;
   z-index: 999;
-  color: #5b5959;
+  color: #545151;
   background-color: white;
   overflow:hidden;
 }
 
-header .logo,
-header .icon{
-  width:10%
-
-}
 
 input{
   width:100%;
@@ -38,24 +29,53 @@ i{
   padding: 10px;
 }
 
+
 .icon a{
   text-decoration: none;
   color: #5b5959;
 }
 
-#navBarSearchForm{
-  width:80%;
+.logo-desk{
+  width: 120px;
+}
+
+.logo-mob{
+  width: 50px;
+
+}
+
+.search-bar{
+  background-color: #E5E5E5;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+}
+
+.search-bar input{
+  background-color: #E5E5E5;
+}
+
+.form-control:focus{
+  background-color: #E5E5E5;
+  border: none;
+  box-shadow: none;
+}
+
+
+.icon{
+  padding: 8px 10px;
 }
 
 .fa-bell{
   color: #ef9339;
 }
 
-/* main  */
+
+
+/* left bar */
 
 .left-bar{
-  margin-top: 40px;
-  width: 150px;
+  width: 90px;
   height: 95%;
 
   background-image: url(../img/sidebar-bg.png);
@@ -68,12 +88,6 @@ i{
   overflow: hidden;
 }
 
-.left-bar {
-
-
-
-}
-
 
 .left-bar a{
   color: white;
@@ -83,9 +97,14 @@ i{
   width: 40%;
 }
 
+aside a{
+  text-decoration: none;
+}
+
 .sa-hover:hover {
   background-color: rgba(173, 173, 173, 0.368);
 }
+
 
 td img{
   width: 25px;
@@ -122,7 +141,7 @@ td .le{
 
 #dashboard{
   margin-top: 70px;
-  margin-left: 150px;
+  margin-left: 90px;
   height: calc(100vh - 70px);
   overflow: auto;
 }
@@ -147,6 +166,11 @@ td .le{
 
 .sa-bc-btn:hover{
   background-color: #0e428b;
+}
+
+.blaze{
+  display: inline-block;
+  margin: 0;
 }
 
 
@@ -186,9 +210,6 @@ td .le{
 
 
 
-
-
-
 /* RESPONSIVE FIX */
 
 
@@ -199,14 +220,14 @@ td .le{
 
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
 
   .left-bar{
     width: 150px;
   }
 
   #dashboard{
-    /* margin-left: 90px; */
+    margin-left: 150px;
   }
 
 }
