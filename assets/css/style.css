@@ -63,13 +63,24 @@ i{
   z-index: 50;
 }
 
-.aside-container .row{
+.left-bar {
   width: 150px;
-  height: 90%;
+  height: 95%;
+  overflow: hidden;
 }
 
-.left-bar .aside-container a{
+
+
+.left-bar a{
   color: white;
+}
+
+.sa-w{
+  width: 40%;
+}
+
+.sa-hover:hover {
+  background-color: rgba(173, 173, 173, 0.368);
 }
 
 td img{
