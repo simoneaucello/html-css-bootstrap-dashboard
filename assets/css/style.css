@@ -1,5 +1,7 @@
 body{
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .debug{
@@ -19,6 +21,7 @@ header{
   z-index: 999;
   color: #5b5959;
   background-color: white;
+  overflow:hidden;
 }
 
 header .logo,
@@ -53,7 +56,8 @@ i{
 .left-bar{
   margin-top: 40px;
   width: 150px;
-  height: 100vh;
+  height: 95%;
+
   background-image: url(../img/sidebar-bg.png);
   background-color: #142335;
 
@@ -61,14 +65,14 @@ i{
   top: 0;
   left: 0;
   z-index: 50;
-}
-
-.left-bar {
-  width: 150px;
-  height: 95%;
   overflow: hidden;
 }
 
+.left-bar {
+
+
+
+}
 
 
 .left-bar a{
@@ -92,6 +96,26 @@ td img{
 td p{
   padding-top: 9px;
 }
+
+td .la{
+  width:50%
+}
+
+td .lb{
+  width:20%
+}
+
+td .lc{
+  width:5%
+}
+
+td .ld{
+  width:10%
+}
+
+td .le{
+  width:15%
+}
 /* left bar  */
 
 /* dashboard  */
@@ -99,18 +123,30 @@ td p{
 #dashboard{
   margin-top: 70px;
   margin-left: 150px;
-
+  height: calc(100vh - 70px);
+  overflow: auto;
 }
 
-.sa_container{
- 
+.hide{
+  display: none;
 }
 
-.sa_container .prospect{
+.sa-container{
   background-color: #3a70df;
-  /* width: 100vw; */
-  height: 130px;
-  
+}
+
+
+.sa-canvas{
+  width: 100% !important;
+}
+
+
+.sa-bc-btn{
+  background-color: #155ab9;
+}
+
+.sa-bc-btn:hover{
+  background-color: #0e428b;
 }
 
 
@@ -146,4 +182,31 @@ td p{
 
 .divide-box{
   border-bottom: 1px solid #dcdfe3;
+}
+
+
+
+
+
+
+/* RESPONSIVE FIX */
+
+
+@media screen and (min-width: 768px){
+  .sa-canvas{
+    width: 50% !important;
+  }
+
+}
+
+@media screen and (min-width: 768px){
+
+  .left-bar{
+    width: 150px;
+  }
+
+  #dashboard{
+    /* margin-left: 90px; */
+  }
+
 }

@@ -107,29 +107,126 @@
 
   <!-- DASHBOARD  -->
   <section id="dashboard">
-    <div class="sa_container text-white">
-      <div class="prospect w-100">
-        <div class="container-fluid">
-          <div class="row pt-3">
-            <div class="col col-7 d-flex justify-content-between ">
+    <section class="container-fluid sa-container text-white mb-4">
+      <div class="py-3  row row-cols-1 row-cols-md-3 ">
 
-              <div class="boolean">
-                Boolean
-              </div>
-
-              <div class="counter">
-                Studenti online negli ultimi 30 minuti
-              </div>
+        <div class="col order-md-1 col-lg-2">
+          <span class="d-inline-block me-2 pt-3">Nuovo studente</span>
+          <button class="btn btn-outline-light py-0 px-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          
+          <div class="offcanvas offcanvas-end sa-canvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="col col-5 d-flex justify-content-center ">
-              <div class="new-student">
-                Nuovo studente
-              </div>
+            <div class="offcanvas-body">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Nome</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Cognome</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Conferma Email</label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Conferma Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Indirizzo</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Citta</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Stato</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Scegli</option>
+                    <option>Italia</option>
+                    <option>Giappone</option>
+                    <option>America</option>
+                    <option>Tailandia</option>
+                    <option>Marocco</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">CAP</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Seleziona per proseguire
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Default file input example</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  
+                </div>
+                <div class="col-6">
+                  <button type="submit" class="btn btn-primary">Salva</button>
+                  <button type="reset" class="btn btn-warning ">Svuota</button>
+                </div>
+                
+              </form>
             </div>
           </div>
         </div>
+
+        <div class="col col-lg-6 ">
+          <h1 class="d-inline ">Boolean</h1>
+          <span class="badge rounded-pill sa-bc-btn">Piano Blaze</span>
+          <div>
+            <span class="badge rounded-pill sa-bc-btn">3 APP</span>
+            <i class="fa-solid fa-angles-right"></i>
+            <span class="badge rounded-pill sa-bc-btn
+            ">+</span>
+            <div class="d-lg-inline d-none ">
+              <span class="badge rounded-pill sa-bc-btn
+            ">Boolean mobile app</span>
+            <span class="badge rounded-pill sa-bc-btn
+            ">Boolean web app</span>
+            <span class="badge rounded-pill sa-bc-btn
+            ">Boolean blog app</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-4 pt-3">
+          <p class="pb-0">Studenti on-line negli ultimi 30 giorni</p>
+          <p class="fs-2 mb-0">125</p>
+        </div>
+
       </div>
-    </div>
+    </section>
 
 
     <div class="stat w-100">
@@ -152,11 +249,11 @@
                 <table class="table mb-0 bg-white table-sm table-hover w-100 text-center ">
                   <thead class="bg-light">
                     <tr>
-                      <th class="text-start " style="width:50%">Name</th>
-                      <th style="width:20%">Data inizio</th>
-                      <th style="width:5%">ROI</th>
-                      <th style="width:10%">Stato</th>
-                      <th style="width:15%">Azioni</th>
+                      <th class=" la text-start">Nome</th>
+                      <th class="lb hide d-sm-table-cell">Data inizio</th>
+                      <th class="lc hide d-sm-table-cell">ROI</th>
+                      <th class="ld">Stato</th>
+                      <th class="le">Azioni</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -172,10 +269,10 @@
                           </div>
                         </div>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">15 febbraio 2021</p>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
                       </td>
                       <td><p class="badge text-bg-success">Done</p></td>
@@ -202,10 +299,10 @@
                           </div>
                         </div>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">16 febbraio 2021</p>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
                       </td>
                       <td><p class="badge text-bg-success">Done</p></td>
@@ -231,10 +328,10 @@
                           </div>
                         </div>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">17 febbraio 2021</p>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
                       </td>
                       <td><p class="badge text-bg-warning text-white ">Process</p></td>
@@ -260,10 +357,10 @@
                           </div>
                         </div>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">18 febbraio 2021</p>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
                       </td>
                       <td><p class="badge text-bg-success">Done</p></td>
@@ -289,10 +386,10 @@
                           </div>
                         </div>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">19 febbraio 2021</p>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
                       </td>
                       <td><p class="badge text-bg-danger">Failed</p></td>
@@ -318,10 +415,10 @@
                           </div>
                         </div>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20 febbraio 2021</p>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
                       </td>
                       <td><p class="badge text-bg-success">Done</p></td>
@@ -347,10 +444,10 @@
                           </div>
                         </div>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">21 febbraio 2021</p>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
                       </td>
                       <td><p class="badge text-bg-danger">Failed</p></td>
@@ -376,10 +473,10 @@
                           </div>
                         </div>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">22 febbraio 2021</p>
                       </td>
-                      <td>
+                      <td class="hide d-sm-table-cell">
                         <p class="fw-normal mb-1">20%</p>
                       </td>
                       <td><p class="badge text-bg-success">Done</p></td>
